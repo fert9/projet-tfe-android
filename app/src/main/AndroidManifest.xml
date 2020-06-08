@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.sannerqr">
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="com.android.hardware.Camera.focus" />
+    <uses-feature android:name="com.android.hardware.Camera.focus"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Empreinte">
 
         </activity>
         <activity
@@ -26,5 +28,4 @@
             android:screenOrientation="fullSensor"
             tools:replace="screenOrientation"></activity>
     </application>
-
 </manifest>
